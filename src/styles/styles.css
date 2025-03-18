@@ -1,0 +1,217 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+.text12 {
+  @apply text-[12px]
+}
+
+.text14 {
+  @apply text-[14px]
+}
+
+.text18 {
+  @apply text-[18px]
+}
+
+.text20 {
+  @apply text-[20px];
+}
+
+.text24 {
+  @apply text-2xl font-bold
+}
+
+.text36 {
+  @apply text-4xl font-bold
+}
+
+.text64 {
+  @apply text-[64px] font-bold
+}
+
+.bold {
+  @apply font-bold
+}
+
+.rounded40 {
+  @apply rounded-[40px]
+}
+
+.g8 {
+  @apply gap-2
+}
+
+.g12 {
+  @apply gap-3
+}
+
+.g24 {
+  @apply gap-6
+}
+
+.g32 {
+  @apply gap-8
+}
+
+.pointer:hover {
+  @apply cursor-pointer
+}
+
+.hover:hover {
+  @apply cursor-pointer opacity-70
+}
+
+.latest {
+  @apply relative font-bold after:content-[''] after:rounded-[40px] after:bg-[#A3EED6] after:w-full after:h-[32px] after:absolute after:bottom-0 after:left-0 after:-z-10
+}
+
+.textWhite {
+  @apply text-[#FFFFFF]
+}
+
+.important {
+  @apply text-[96px] font-normal leading-[24px] text-[#15AA7A]
+}
+
+.racing {
+  font-family: "Racing Sans One", "sans-serif";
+}
+
+.special-text {
+  @apply align-sub
+}
+
+.title {
+  @apply font-bold text-[#15AA7A] text-[18px]
+}
+
+.kaizen {
+  @apply italic border-l-3 border-[#15AA7A] pt-3 pl-9 pb-2 text-[20px]
+}
+
+.share {
+  @apply p-3 border-[1px] border-[#15AA7A] rounded-[16px] flex justify-center hover:cursor-pointer hover:opacity-60
+}
+
+.show {
+  @apply hidden
+}
+
+
+
+
+@media (max-width: 639px) {
+
+  html,
+  body {
+    @apply text-[12px]
+  }
+
+  .hide {
+    @apply hidden
+  }
+
+  .show {
+    @apply block
+  }
+
+  .text12 {
+    @apply text-[6px]
+  }
+
+  .text14 {
+    @apply text-[7px]
+  }
+
+  .text18 {
+    @apply text-[9px]
+  }
+
+  .text20 {
+    @apply text-[10px]
+  }
+
+  .text24 {
+    @apply text-[12px]
+  }
+
+  .text36 {
+    @apply text-[18px]
+  }
+
+  .text64 {
+    @apply text-[32px]
+  }
+
+  .banner {
+    @apply flex items-center mb-8
+  }
+
+  .banner-img {
+    @apply pr-2 pl-2 min-h-auto min-w-auto
+  }
+
+  .no-grid {
+    @apply flex px-2.5
+  }
+
+  .leftP1 {
+    @apply mt-0 ml-[22px]
+  }
+
+  .leftP2 {
+    @apply grid grid-cols-[1fr_1fr]
+  }
+
+  .layout {
+    @apply flex
+  }
+
+  .latest {
+    @apply relative font-bold after:content-[''] after:rounded-[40px] after:bg-[#A3EED6] after:w-full after:h-[16px] after:absolute after:bottom-0 after:left-0 after:-z-10
+  }
+
+  .kaizen {
+    @apply italic border-l-3 border-[#15AA7A] pt-3 pl-9 pb-2 text-[10px]
+  }
+
+  .px {
+    @apply px-1
+  }
+
+  .rate {
+    @apply h-8 w-8
+  }
+
+  .imgC1 {
+    @apply h-[15px]
+  }
+
+  .descC1 {
+    @apply px-[25px]
+  }
+
+  .logoC1 {
+    @apply h-[33px]
+  }
+
+  .infoC1 {
+    @apply flex flex-col gap-1
+  }
+
+  .iconC1 {
+    @apply h-[15px]
+  }
+
+  .recommend {
+    @apply grid grid-cols-[1fr_1fr] gap-x-3 gap-y-8
+  }
+
+  .input {
+    @apply text-[9px] py-4
+  }
+
+  .button {
+    @apply p-2
+  }
+}
