@@ -24,7 +24,7 @@ const Sidebar: React.FC<SidebarProps> = ({
             : "translate-x-full"
         }`}>
       <button
-        className="absolute top-4 right-4 text-xl"
+        className="absolute top-4 right-4 text-xl z-100"
         onClick={() => setOpen(false)}>
         ✖
       </button>

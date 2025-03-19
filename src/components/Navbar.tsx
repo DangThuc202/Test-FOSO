@@ -109,39 +109,41 @@ const Navbar = () => {
       </button>
 
       <Sidebar isOpen={navOpen} setOpen={setNavOpen} position="left">
-        {" "}
-        <ul className="p-5 flex flex-col justify-center">
-          <div className="flex justify-center">
-            <img
-              className="w-[100px] h-[50px] mb-4"
-              src="https://res.cloudinary.com/thucdang/image/upload/v1742025925/Navbar/6e981218d4aee7968a13351e9bc8d935_b1wog0.png"
-            />
-          </div>
-          {items.map((item) => (
-            <li key={item.title} className="py-2 border-b">
-              <button
-                className="w-full text-left flex justify-between items-center"
-                onClick={() =>
-                  item.children ? toggleSubMenu(item.title) : setOpen(false)
-                }>
-                {item.title}
-                {item.children && (
-                  <span>{activeTitle === item.title ? "▲" : "▼"}</span>
-                )}
-              </button>
+        <div className="relative">
+          <ul className="p-5 flex flex-col justify-center">
+            <div className="flex justify-center">
+              <img
+                className="w-[100px] h-[50px] mb-4"
+                src="https://res.cloudinary.com/thucdang/image/upload/v1742025925/Navbar/6e981218d4aee7968a13351e9bc8d935_b1wog0.png"
+              />
+            </div>
+            {items.map((item) => (
+              <li key={item.title} className="py-2 border-b">
+                <button
+                  className="w-full text-left flex justify-between items-center"
+                  onClick={() =>
+                    item.children ? toggleSubMenu(item.title) : setOpen(false)
+                  }>
+                  {item.title}
+                  {item.children && (
+                    <span>{activeTitle === item.title ? "▲" : "▼"}</span>
+                  )}
+                </button>
 
-              {item.children && activeTitle === item.title && (
-                <ul className="ml-4 mt-2 border-l pl-4">
-                  {item.children.map((child) => (
-                    <a href={child.link} key={child.title} className="py-1">
-                      {child.title}
-                    </a>
-                  ))}
-                </ul>
-              )}
-            </li>
-          ))}
-        </ul>
+                {item.children && activeTitle === item.title && (
+                  <ul className="ml-4 mt-2 border-l pl-4">
+                    {item.children.map((child) => (
+                      <a href={child.link} key={child.title} className="py-1">
+                        {child.title}
+                      </a>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </ul>
+          <BtnTranslate />
+        </div>
       </Sidebar>
     </>
   );
