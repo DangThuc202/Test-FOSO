@@ -11,7 +11,7 @@ i18n.use(initReactI18next).init({
     en: { translation: en },
   },
   lng: "vi", // Ngôn ngữ mặc định
-  fallbackLng: "en",
+  fallbackLng: "en", // không có nn nào hợp lệ thì chạy này
   interpolation: {
     escapeValue: false, // React đã xử lý XSS rồi nên có thể đặt false
   },

@@ -47,8 +47,8 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="min-w-2/3 mb-6 sticky top-0 z-100">
-        <div className=" bg-[#FFFFFFA6] shadow-[1px_-1px_0px_0px_#F0F0F0] mt-6 mb-6 backdrop-blur-[25px] px-5 rounded40 hide">
+      <div className="max-w-4/5 mb-6 sticky top-0 z-100">
+        <div className=" bg-[#FFFFFFA6] shadow-[1px_-1px_0px_0px_#F0F0F0] mt-6 mb-6 backdrop-blur-[25px] px-6 rounded40 hide">
           <div className="flex py-3 gap-16 items-center justify-center">
             <div className="">
               <img

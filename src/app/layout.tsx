@@ -27,11 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col`}>
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col items-center`}>
         <I18nProvider>
-          <div className="">
-            <Navbar />
-          </div>
+          <Navbar />
           {children}
           <footer className="h-[300px]"></footer>
         </I18nProvider>
