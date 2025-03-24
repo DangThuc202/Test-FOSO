@@ -103,7 +103,7 @@ const Navbar = () => {
       </div>
 
       <button
-        className="show my-3 ml-2 py-1 px-3 border-[1px] relative text-[16px]"
+        className="show my-3 ml-2 py-1 px-3 border-[1px] absolute left-0 text-[16px]"
         onClick={() => setNavOpen(!navOpen)}>
         ☰
       </button>
